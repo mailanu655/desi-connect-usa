@@ -1,0 +1,63 @@
+# ─────────────────────────────────────────────────────────────
+# Desi Connect USA — Local Development Stack
+# Usage: docker compose up [-d] [--build]
+# ─────────────────────────────────────────────────────────────
+
+version: '3.9'
+
+services:
+  # ── Redis (session store for WhatsApp bot) ─────────────────
+  redis:
+    image: redis:7-alpine
+    ports:
+      - '6379:6379'
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes --maxmemory 128mb --maxmemory-policy allkeys-lru
+    healthcheck:
+      test: ['CMD', 'redis-cli', 'ping']
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  # ── Middleware (WhatsApp bot + API) ─────────────────────────
+  middleware:
+    build:
+      context: .
+      dockerfile: docker/middleware.Dockerfile
+      args:
+        NODE_ENV: production
+    ports:
+      - '3001:3001'
+    env_file:
+      - .env
+    environment:
+      - NODE_ENV=production
+      - PORT=3001
+      - REDIS_URL=redis://redis:6379
+    depends_on:
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+
+  # ── Web (Next.js frontend) ─────────────────────────────────
+  web:
+    build:
+      context: .
+      dockerfile: docker/web.Dockerfile
+      args:
+        NODE_ENV: production
+    ports:
+      - '3000:3000'
+    env_file:
+      - .env
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - MIDDLEWARE_URL=http://middleware:3001
+    depends_on:
+      - middleware
+    restart: unless-stopped
+
+volumes:
+  redis_data:

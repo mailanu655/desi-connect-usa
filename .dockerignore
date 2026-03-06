@@ -1,0 +1,52 @@
+# ─────────────────────────────────────────────────────────────
+# Desi Connect USA — Docker Ignore
+# ─────────────────────────────────────────────────────────────
+
+# Dependencies (installed inside container)
+node_modules
+**/node_modules
+
+# Build outputs (rebuilt inside container)
+**/dist
+**/build
+**/.next
+
+# Test & coverage
+**/coverage
+**/__tests__
+**/tests
+**/*.test.ts
+**/*.test.tsx
+**/*.spec.ts
+**/*.spec.tsx
+jest.config.*
+
+# Git
+.git
+.gitignore
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# Environment (secrets injected at runtime)
+.env
+.env.*
+!.env.example
+
+# CI/CD
+.github
+
+# Docker (don't recurse)
+docker-compose*.yml
+
+# Documentation
+*.md
+LICENSE
+docs/
+
+# OS
+.DS_Store
+Thumbs.db

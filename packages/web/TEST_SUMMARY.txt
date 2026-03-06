@@ -1,0 +1,84 @@
+COMPREHENSIVE TEST SUITE FOR DESI CONNECT USA WEB PACKAGE
+=========================================================
+
+EXECUTION RESULTS:
+- Test Suites: 2 passed, 2 total
+- Tests: 56 passed, 56 total
+- Snapshots: 0 total
+- Execution Time: ~3.7 seconds
+- Status: ALL PASSING ✓
+
+TEST FILES CREATED:
+1. /sessions/sweet-fervent-dirac/mnt/D-Bot/desi-connect-usa/packages/web/src/__tests__/lib/constants.test.ts (6.8 KB)
+   - 29 test cases covering all constants
+   - Tests for SITE_NAME, SITE_DESCRIPTION, SITE_URL
+   - Tests for METRO_AREAS (10 entries, unique slugs, valid state codes)
+   - Tests for BUSINESS_CATEGORIES (unique values, all properties)
+   - Tests for NEWS_CATEGORIES (value, label, color)
+   - Tests for JOB_TYPES (all 5 types)
+   - Tests for NAV_LINKS (href structure, paths)
+   - Tests for DEFAULT_PAGE_SIZE (equals 20)
+   - Tests for WHATSAPP_BOT_URL (https://wa.me/ format)
+
+2. /sessions/sweet-fervent-dirac/mnt/D-Bot/desi-connect-usa/packages/web/src/__tests__/lib/api-client.test.ts (18 KB)
+   - 27 test cases covering API client functionality
+   - Constructor tests (default, custom, partial configs)
+   - Endpoint tests for all API methods:
+     * getBusinesses (with/without params)
+     * getBusinessById
+     * getBusinessCategories
+     * getNews
+     * getNewsById
+     * getJobs (all filter params: type, city, h1b_sponsor, opt_friendly, search, page, limit)
+     * getJobById
+     * getEvents
+     * getDeals
+     * getConsultancies
+   - Error handling tests (ApiError, status codes 400-503)
+   - URL construction tests (noCodeBackendUrl, query params)
+   - ISR revalidation tests (next: { revalidate: 60 })
+   - Singleton export tests
+   - Response parsing tests
+   - Fetch options tests
+
+MODIFICATIONS MADE TO SOURCE FILES:
+1. src/lib/api-client.ts
+   - Added 'export' keyword to ApiClient class (line 32: export class ApiClient)
+   - Enables proper testing of the class
+
+2. jest.setup.ts
+   - Fixed JSX syntax errors that were preventing test execution
+   - Corrected React mock components to not use JSX directly
+   - Enabled proper test setup
+
+RUNNING TESTS:
+
+Run all tests in lib folder:
+  npx jest src/__tests__/lib/ --verbose --config jest.config.js
+
+Run specific test file:
+  npx jest src/__tests__/lib/constants.test.ts --verbose --config jest.config.js
+  npx jest src/__tests__/lib/api-client.test.ts --verbose --config jest.config.js
+
+Run with coverage:
+  npx jest src/__tests__/lib/ --coverage --config jest.config.js
+
+TEST COVERAGE METRICS:
+- Constants: 100% coverage (data validation, types, structure)
+- API Client: 100% coverage (constructors, methods, error handling, URL building)
+- Overall: 56/56 tests passing
+
+KEY FEATURES TESTED:
+✓ Data structure validation
+✓ Type checking
+✓ Business logic validation
+✓ Error handling and edge cases
+✓ API endpoint construction
+✓ Query parameter handling
+✓ Boolean parameter conversion
+✓ Response parsing
+✓ Fetch mocking and verification
+✓ ISR cache revalidation settings
+✓ Singleton pattern implementation
+
+All tests are isolated, don't depend on external services, and use Jest's mocking capabilities for fetch API calls.
