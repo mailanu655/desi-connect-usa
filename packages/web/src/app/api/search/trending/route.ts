@@ -3,7 +3,7 @@
  * Week 13: Search & Discovery
  */
 import { NextRequest, NextResponse } from 'next/server';
-import type { TrendingSearchesResponse } from '@desi-connect-usa/shared/src/types';
+import type { TrendingSearchesResponse } from '@desi-connect/shared/src/types';
 
 // In production, these would come from an analytics backend
 const TRENDING_SEARCHES: TrendingSearchesResponse = {

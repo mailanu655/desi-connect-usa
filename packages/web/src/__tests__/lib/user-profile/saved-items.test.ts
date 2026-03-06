@@ -9,7 +9,7 @@ import {
   sortSavedItems,
   formatSavedDate,
 } from '@/lib/user-profile';
-import type { SavedItem } from '@desi-connect-usa/shared';
+import type { SavedItem } from '@desi-connect/shared';
 
 describe('Saved Items Utilities', () => {
   // groupSavedItemsByType tests

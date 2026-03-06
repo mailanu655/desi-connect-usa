@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import RecentSearches from '@/components/search/RecentSearches';
-import type { RecentSearch } from '@desi-connect-usa/shared/src/types';
+import type { RecentSearch } from '@desi-connect/shared/src/types';
 
 describe('RecentSearches', () => {
   const mockSearches: RecentSearch[] = [

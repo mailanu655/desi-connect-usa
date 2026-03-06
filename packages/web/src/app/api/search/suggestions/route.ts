@@ -3,7 +3,7 @@
  * Week 13: Search & Discovery
  */
 import { NextRequest, NextResponse } from 'next/server';
-import type { SearchSuggestionsResponse, SearchSuggestion } from '@desi-connect-usa/shared/src/types';
+import type { SearchSuggestionsResponse, SearchSuggestion } from '@desi-connect/shared/src/types';
 import {
   SEARCH_CONTENT_TYPES,
   MAX_SUGGESTIONS,

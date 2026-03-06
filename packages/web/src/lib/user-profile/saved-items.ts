@@ -3,7 +3,7 @@
  * Handles grouping, filtering, and sorting of saved items
  */
 
-import type { SavedItem, ContentType } from '@desi-connect-usa/shared';
+import type { SavedItem, ContentType } from '@desi-connect/shared';
 
 /**
  * Groups saved items by their type

@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import type { SearchResult } from '@desi-connect-usa/shared/src/types';
+import type { SearchResult } from '@desi-connect/shared/src/types';
 import { getContentTypeIcon, getContentTypeColor, getContentTypeLabel } from '@/lib/search';
 
 interface SearchResultCardProps {

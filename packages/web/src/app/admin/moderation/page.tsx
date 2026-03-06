@@ -8,7 +8,7 @@ import ModerationActionModal from '@/components/admin/ModerationActionModal';
 import StatsCard from '@/components/admin/StatsCard';
 import type { Column } from '@/components/admin/AdminDataTable';
 import type { BadgeVariant } from '@/components/admin/AdminBadge';
-import type { ModerationAction, ModerationReason } from '@desi-connect-usa/shared';
+import type { ModerationAction, ModerationReason } from '@desi-connect/shared';
 
 interface ModerationQueueItem {
   content_id: string;

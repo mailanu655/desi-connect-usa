@@ -4,7 +4,7 @@
  */
 import { NextRequest, NextResponse } from 'next/server';
 import { ApiClient } from '@/lib/api-client';
-import type { SearchContentType, SearchResponse, SearchResult } from '@desi-connect-usa/shared/src/types';
+import type { SearchContentType, SearchResponse, SearchResult } from '@desi-connect/shared/src/types';
 import {
   ALL_CONTENT_TYPES,
   DEFAULT_SEARCH_LIMIT,

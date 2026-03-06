@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import type { SearchResult } from '@desi-connect-usa/shared/src/types';
+import type { SearchResult } from '@desi-connect/shared/src/types';
 
 // Mock next/link
 jest.mock('next/link', () => {

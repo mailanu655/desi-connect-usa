@@ -8,7 +8,7 @@ const mockValidateBulkOperation = jest.fn();
 const mockValidateCreateAdminUser = jest.fn();
 const mockValidateUpdateAdminUser = jest.fn();
 
-jest.mock('@desi-connect-usa/shared', () => ({
+jest.mock('@desi-connect/shared', () => ({
   isValidContentType: (...args: unknown[]) => mockIsValidContentType(...args),
   validateAnalyticsTimeRange: (...args: unknown[]) => mockValidateAnalyticsTimeRange(...args),
   validateBulkOperation: (...args: unknown[]) => mockValidateBulkOperation(...args),

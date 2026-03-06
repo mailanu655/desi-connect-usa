@@ -4,7 +4,7 @@
  */
 
 import { NextRequest, NextResponse } from 'next/server';
-import { validateUserSearchParams } from '@desi-connect-usa/shared';
+import { validateUserSearchParams } from '@desi-connect/shared';
 
 export async function GET(request: NextRequest) {
   try {

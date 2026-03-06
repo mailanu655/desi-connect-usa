@@ -3,7 +3,7 @@
  * Provides helpers for managing user profiles, display names, and completion tracking
  */
 
-import type { User } from '@desi-connect-usa/shared';
+import type { User } from '@desi-connect/shared';
 
 /**
  * Formats the user's display name, falling back to "Anonymous User" if not provided

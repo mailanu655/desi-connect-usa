@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { apiClient } from '@/lib/api-client';
 import { groupSavedItemsByType, formatSavedDate } from '@/lib/user-profile';
 import type { SavedItem } from '@/lib/api-client';
-import type { ContentType } from '@desi-connect-usa/shared';
+import type { ContentType } from '@desi-connect/shared';
 
 const ITEM_TYPES: ContentType[] = ['business', 'event', 'deal', 'job', 'news', 'review'];
 

@@ -4,7 +4,7 @@
  */
 
 import { NextRequest, NextResponse } from 'next/server';
-import { validateUserManagementAction } from '@desi-connect-usa/shared';
+import { validateUserManagementAction } from '@desi-connect/shared';
 
 export async function POST(request: NextRequest) {
   try {

@@ -1,6 +1,6 @@
 'use client';
 
-import type { SearchContentType, SearchFacets } from '@desi-connect-usa/shared/src/types';
+import type { SearchContentType, SearchFacets } from '@desi-connect/shared/src/types';
 import { SEARCH_CONTENT_TYPES, getContentTypeIcon } from '@/lib/search';
 
 interface SearchFiltersProps {

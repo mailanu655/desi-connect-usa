@@ -3,7 +3,7 @@
  * Handles notification settings and frequency management
  */
 
-import type { NotificationPreference, NotificationChannel, NotificationFrequency } from '@desi-connect-usa/shared';
+import type { NotificationPreference, NotificationChannel, NotificationFrequency } from '@desi-connect/shared';
 
 /**
  * Returns default notification preferences for a new user

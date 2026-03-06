@@ -7,7 +7,7 @@ import {
   toggleChannel,
   formatFrequencyLabel,
 } from '@/lib/user-profile';
-import type { NotificationPreference } from '@desi-connect-usa/shared';
+import type { NotificationPreference } from '@desi-connect/shared';
 
 export default function NotificationsPage() {
   const [preferences, setPreferences] = useState<NotificationPreference[]>([]);

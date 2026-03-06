@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import type { ModerationAction, ModerationReason } from '@desi-connect-usa/shared';
+import type { ModerationAction, ModerationReason } from '@desi-connect/shared';
 
 export interface ModerationActionModalProps {
   isOpen: boolean;

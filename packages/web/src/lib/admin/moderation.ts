@@ -12,7 +12,7 @@ import type {
   ModerationQueueItem,
   ModerationStats,
   BulkOperationType,
-} from '@desi-connect-usa/shared';
+} from '@desi-connect/shared';
 
 // ── Status Labels ──────────────────────────────────────────────
 

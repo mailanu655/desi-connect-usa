@@ -6,7 +6,7 @@ const mockValidateModerationQueueFilters = jest.fn();
 const mockValidateModerationAction = jest.fn();
 const mockIsValidContentType = jest.fn();
 
-jest.mock('@desi-connect-usa/shared', () => ({
+jest.mock('@desi-connect/shared', () => ({
   validateModerationQueueFilters: (...args: unknown[]) => mockValidateModerationQueueFilters(...args),
   validateModerationAction: (...args: unknown[]) => mockValidateModerationAction(...args),
   isValidContentType: (...args: unknown[]) => mockIsValidContentType(...args),

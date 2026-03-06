@@ -4,7 +4,7 @@ import { NextRequest } from 'next/server';
 // Mock shared package
 const mockValidateApprovalDecision = jest.fn();
 
-jest.mock('@desi-connect-usa/shared', () => ({
+jest.mock('@desi-connect/shared', () => ({
   validateApprovalDecision: (...args: unknown[]) => mockValidateApprovalDecision(...args),
 }));
 

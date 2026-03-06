@@ -2,7 +2,7 @@
  * Tests for Search Utility Library
  * Week 13: Search & Discovery
  */
-import type { SearchResult, SearchContentType, SearchParams, RecentSearch } from '@desi-connect-usa/shared/src/types';
+import type { SearchResult, SearchContentType, SearchParams, RecentSearch } from '@desi-connect/shared/src/types';
 import {
   SEARCH_CONTENT_TYPES,
   ALL_CONTENT_TYPES,

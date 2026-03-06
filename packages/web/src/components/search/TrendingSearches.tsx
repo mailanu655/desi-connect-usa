@@ -1,6 +1,6 @@
 'use client';
 
-import type { TrendingSearch } from '@desi-connect-usa/shared/src/types';
+import type { TrendingSearch } from '@desi-connect/shared/src/types';
 
 interface TrendingSearchesProps {
   trending: TrendingSearch[];

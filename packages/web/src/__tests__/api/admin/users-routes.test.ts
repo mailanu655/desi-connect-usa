@@ -5,7 +5,7 @@ import { NextRequest } from 'next/server';
 const mockValidateUserSearchParams = jest.fn();
 const mockValidateUserManagementAction = jest.fn();
 
-jest.mock('@desi-connect-usa/shared', () => ({
+jest.mock('@desi-connect/shared', () => ({
   validateUserSearchParams: (...args: unknown[]) => mockValidateUserSearchParams(...args),
   validateUserManagementAction: (...args: unknown[]) => mockValidateUserManagementAction(...args),
 }));

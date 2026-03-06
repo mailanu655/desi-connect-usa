@@ -5,7 +5,7 @@
  */
 
 import { NextRequest, NextResponse } from 'next/server';
-import { validateCreateAdminUser } from '@desi-connect-usa/shared';
+import { validateCreateAdminUser } from '@desi-connect/shared';
 
 export async function GET(_request: NextRequest) {
   try {

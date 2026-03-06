@@ -8,7 +8,7 @@ import type {
   SearchFacets,
   TrendingSearch,
   RecentSearch,
-} from '@desi-connect-usa/shared/src/types';
+} from '@desi-connect/shared/src/types';
 import {
   DEFAULT_SEARCH_LIMIT,
   formatResultCount,

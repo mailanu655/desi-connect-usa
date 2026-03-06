@@ -14,7 +14,7 @@ import type {
   SearchFacets,
   SearchHighlight,
   SearchResultWithHighlights,
-} from '@desi-connect-usa/shared/src/types';
+} from '@desi-connect/shared/src/types';
 import type {
   Business,
   NewsArticle,

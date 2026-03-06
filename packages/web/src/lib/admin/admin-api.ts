@@ -33,7 +33,7 @@ import type {
   AdminActionResponse,
   ModerationQueueFilters,
   ContentManagementFilters,
-} from '@desi-connect-usa/shared';
+} from '@desi-connect/shared';
 
 // ── Types ──────────────────────────────────────────────────────
 

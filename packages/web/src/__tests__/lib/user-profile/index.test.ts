@@ -9,7 +9,7 @@ import {
   isProfileComplete,
   formatJoinDate,
 } from '@/lib/user-profile';
-import type { User } from '@desi-connect-usa/shared';
+import type { User } from '@desi-connect/shared';
 
 describe('User Profile Utilities', () => {
   // formatUserDisplayName tests

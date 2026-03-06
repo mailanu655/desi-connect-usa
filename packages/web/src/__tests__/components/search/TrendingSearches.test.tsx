@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import TrendingSearches from '@/components/search/TrendingSearches';
-import type { TrendingSearch } from '@desi-connect-usa/shared/src/types';
+import type { TrendingSearch } from '@desi-connect/shared/src/types';
 
 describe('TrendingSearches', () => {
   const mockTrending: TrendingSearch[] = [

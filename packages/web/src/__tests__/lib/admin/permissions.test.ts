@@ -11,7 +11,7 @@ import {
   isSuperAdmin,
   getNavItemsForRole,
 } from '@/lib/admin/permissions';
-import type { AdminRole, AdminResource, AdminAction } from '@desi-connect-usa/shared';
+import type { AdminRole, AdminResource, AdminAction } from '@desi-connect/shared';
 
 describe('Admin Permissions', () => {
   describe('hasPermission', () => {

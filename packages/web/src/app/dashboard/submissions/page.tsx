@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { apiClient } from '@/lib/api-client';
 import type { UserSubmission } from '@/lib/api-client';
-import type { ContentType, SubmissionStatus } from '@desi-connect-usa/shared';
+import type { ContentType, SubmissionStatus } from '@desi-connect/shared';
 
 const CONTENT_TYPES: ContentType[] = ['business', 'event', 'deal', 'job', 'news', 'review'];
 const STATUSES: SubmissionStatus[] = ['pending', 'approved', 'rejected', 'draft'];

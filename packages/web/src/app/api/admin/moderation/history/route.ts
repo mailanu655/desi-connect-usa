@@ -4,7 +4,7 @@
  */
 
 import { NextRequest, NextResponse } from 'next/server';
-import { isValidContentType } from '@desi-connect-usa/shared';
+import { isValidContentType } from '@desi-connect/shared';
 
 export async function GET(request: NextRequest) {
   try {

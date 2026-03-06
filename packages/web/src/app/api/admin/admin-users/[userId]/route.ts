@@ -6,7 +6,7 @@
  */
 
 import { NextRequest, NextResponse } from 'next/server';
-import { validateUpdateAdminUser } from '@desi-connect-usa/shared';
+import { validateUpdateAdminUser } from '@desi-connect/shared';
 
 interface RouteParams {
   params: Promise<{ userId: string }>;

@@ -9,7 +9,7 @@ import {
   getEnabledPreferencesCount,
   formatFrequencyLabel,
 } from '@/lib/user-profile';
-import type { NotificationPreference } from '@desi-connect-usa/shared';
+import type { NotificationPreference } from '@desi-connect/shared';
 
 describe('Notification Preferences Utilities', () => {
   // getDefaultNotificationPreferences tests

@@ -15,7 +15,7 @@ import {
   formatRelativeTime,
 } from '@/lib/admin/moderation';
 import type { BadgeVariant, PriorityLevel } from '@/lib/admin/moderation';
-import type { ModerationQueueItem, ModerationStats } from '@desi-connect-usa/shared';
+import type { ModerationQueueItem, ModerationStats } from '@desi-connect/shared';
 
 describe('Moderation Utilities', () => {
   describe('label maps', () => {

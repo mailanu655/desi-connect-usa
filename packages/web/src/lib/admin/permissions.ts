@@ -11,9 +11,9 @@ import type {
   AdminResource,
   AdminAction,
   AdminPermission,
-} from '@desi-connect-usa/shared';
+} from '@desi-connect/shared';
 
-import { ADMIN_ROLE_PERMISSIONS } from '@desi-connect-usa/shared';
+import { ADMIN_ROLE_PERMISSIONS } from '@desi-connect/shared';
 
 // ── Permission Check ────────────────────────────────────────────
 

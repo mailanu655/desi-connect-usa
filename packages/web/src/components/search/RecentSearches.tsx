@@ -1,6 +1,6 @@
 'use client';
 
-import type { RecentSearch } from '@desi-connect-usa/shared/src/types';
+import type { RecentSearch } from '@desi-connect/shared/src/types';
 
 interface RecentSearchesProps {
   searches: RecentSearch[];

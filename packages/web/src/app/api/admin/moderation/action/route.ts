@@ -4,7 +4,7 @@
  */
 
 import { NextRequest, NextResponse } from 'next/server';
-import { validateModerationAction } from '@desi-connect-usa/shared';
+import { validateModerationAction } from '@desi-connect/shared';
 
 export async function POST(request: NextRequest) {
   try {

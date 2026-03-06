@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import SearchFilters from '@/components/search/SearchFilters';
-import type { SearchContentType, SearchFacets } from '@desi-connect-usa/shared/src/types';
+import type { SearchContentType, SearchFacets } from '@desi-connect/shared/src/types';
 
 describe('SearchFilters', () => {
   const mockOnTypesChange = jest.fn();
