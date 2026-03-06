@@ -1,7 +1,7 @@
 'use client';
 export const dynamic = 'force-dynamic';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, Suspense } from 'react';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import type { DigestType, DigestFrequency, NewsletterSubscription, UpdateNewsletterPreferencesInput } from '@/lib/api-client';
@@ -19,7 +19,7 @@ const FREQUENCY_OPTIONS: { value: DigestFrequency; label: string; description: s
   { value: 'weekly', label: 'Weekly Digest', description: 'A summary every Monday' },
 ];
 
-export default function EmailPreferencesPage() {
+function EmailPreferencesPageInner() {
   const [email, setEmail] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [isLookedUp, setIsLookedUp] = useState(false);
@@ -384,5 +384,13 @@ export default function EmailPreferencesPage() {
         </div>
       </section>
     </div>
+  );
+}
+
+export default function EmailPreferencesPage() {
+  return (
+    <Suspense fallback={<div className="flex items-center justify-center min-h-screen"><p>Loading preferences...</p></div>}>
+      <EmailPreferencesPageInner />
+    </Suspense>
   );
 }
