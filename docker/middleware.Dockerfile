@@ -25,9 +25,6 @@ FROM node:20-alpine AS builder
 WORKDIR /app
 
 COPY --from=deps /app/node_modules ./node_modules
-COPY --from=deps /app/packages/shared/node_modules ./packages/shared/node_modules 2>/dev/null || true
-COPY --from=deps /app/packages/database/node_modules ./packages/database/node_modules 2>/dev/null || true
-COPY --from=deps /app/packages/middleware/node_modules ./packages/middleware/node_modules 2>/dev/null || true
 
 # Copy source for shared, database, and middleware
 COPY package.json tsconfig.json ./
