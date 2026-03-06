@@ -25,8 +25,9 @@ afterAll(() => {
 
 // Handle unhandled promise rejections in tests
 if (typeof process !== 'undefined') {
-  process.on('unhandledRejection', (reason) => {
-    const message = reason?.message?.toString?.() || reason?.toString?.() || '';
+  process.on('unhandledRejection', (reason: unknown) => {
+    const r = reason as Record<string, unknown> | null | undefined;
+    const message = (r?.message as string)?.toString?.() || reason?.toString?.() || '';
     // Silently ignore expected test rejections
     if (!message.includes('Logout failed') && !message.includes('Refresh failed')) {
       // Re-throw if not an expected error
