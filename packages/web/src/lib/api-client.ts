@@ -138,6 +138,7 @@ export class ApiClient {
   async getJobs(params?: {
     type?: string;
     city?: string;
+    state?: string;
     h1b_sponsor?: boolean;
     opt_friendly?: boolean;
     search?: string;
@@ -147,6 +148,7 @@ export class ApiClient {
     const queryParams: Record<string, string> = {};
     if (params?.type) queryParams.type = params.type;
     if (params?.city) queryParams.city = params.city;
+    if (params?.state) queryParams.state = params.state;
     if (params?.h1b_sponsor !== undefined) queryParams.h1b_sponsor = String(params.h1b_sponsor);
     if (params?.opt_friendly !== undefined) queryParams.opt_friendly = String(params.opt_friendly);
     if (params?.search) queryParams.search = params.search;
@@ -165,12 +167,16 @@ export class ApiClient {
   async getEvents(params?: {
     category?: string;
     city?: string;
+    state?: string;
+    search?: string;
     page?: number;
     limit?: number;
   }): Promise<ApiResponse<DesiEvent[]>> {
     const queryParams: Record<string, string> = {};
     if (params?.category) queryParams.category = params.category;
     if (params?.city) queryParams.city = params.city;
+    if (params?.state) queryParams.state = params.state;
+    if (params?.search) queryParams.search = params.search;
     if (params?.page) queryParams.page = String(params.page);
     if (params?.limit) queryParams.limit = String(params.limit);
 
@@ -185,11 +191,15 @@ export class ApiClient {
 
   async getDeals(params?: {
     city?: string;
+    state?: string;
+    search?: string;
     page?: number;
     limit?: number;
   }): Promise<ApiResponse<Deal[]>> {
     const queryParams: Record<string, string> = {};
     if (params?.city) queryParams.city = params.city;
+    if (params?.state) queryParams.state = params.state;
+    if (params?.search) queryParams.search = params.search;
     if (params?.page) queryParams.page = String(params.page);
     if (params?.limit) queryParams.limit = String(params.limit);
 
