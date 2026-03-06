@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Saved Items API Route
  * GET: Retrieve saved items with filters

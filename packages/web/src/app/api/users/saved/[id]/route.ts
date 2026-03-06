@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Remove Saved Item API Route
  * DELETE: Remove a saved item by ID

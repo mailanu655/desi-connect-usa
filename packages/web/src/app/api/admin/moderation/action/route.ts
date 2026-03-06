@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Admin Moderation Action API Route (Week 14)
  * POST: Perform a moderation action on content

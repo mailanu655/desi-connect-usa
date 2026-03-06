@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Social Media Posts API Route
  * GET: List posts with filtering

@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * WhatsApp Send API Route
  * 

@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Admin User Detail API Route (Week 14)
  * GET: Get a single user by ID

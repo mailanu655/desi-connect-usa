@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Login page with three authentication methods:
  * - Google Sign In (primary)

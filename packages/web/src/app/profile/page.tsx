@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * User Profile Dashboard
  * Displays user info with tabs for submissions, saved items, and notifications

@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Giveaway Entry API Route
  * POST: Submit an entry to a giveaway campaign

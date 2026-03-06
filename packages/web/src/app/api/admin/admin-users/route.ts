@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Admin Users CRUD API Route (Week 14)
  * GET: List all admin users

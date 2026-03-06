@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Admin Users API Route (Week 14)
  * GET: List/search users with filters

@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Refresh session endpoint
  * POST: Refresh the current session

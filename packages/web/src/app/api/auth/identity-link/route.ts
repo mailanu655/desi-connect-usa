@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Identity linking endpoint
  * POST: Initiate identity linking (send OTP)

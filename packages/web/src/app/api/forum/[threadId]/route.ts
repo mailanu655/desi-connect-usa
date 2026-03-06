@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Single Thread API Route
  * GET: Get thread by ID (returns thread + replies)

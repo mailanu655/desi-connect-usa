@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Newsletter Unsubscribe API Route
  * POST: Unsubscribe an email from the newsletter

@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Admin Audit Log API Route (Week 14)
  * GET: Retrieve audit log entries with filters

@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * GET /api/search - Global search across all content types
  * Week 13: Search & Discovery

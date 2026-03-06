@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Analytics Overview API Route
  * GET: Retrieve mock analytics overview data

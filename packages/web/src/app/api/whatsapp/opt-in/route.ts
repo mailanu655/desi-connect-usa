@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * WhatsApp Opt-In API Route
  * POST: Register a phone number for WhatsApp updates

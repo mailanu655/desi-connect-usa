@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * GET /api/search/suggestions - Autocomplete search suggestions
  * Week 13: Search & Discovery

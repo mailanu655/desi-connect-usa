@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Newsletter Preferences API Route
  * POST: Update newsletter preferences for an existing subscription

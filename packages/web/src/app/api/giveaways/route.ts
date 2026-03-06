@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Giveaway Campaigns API Route
  * GET: List campaigns with filtering

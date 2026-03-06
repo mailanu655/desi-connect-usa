@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Send magic link endpoint
  * Sends an authentication link to the provided email

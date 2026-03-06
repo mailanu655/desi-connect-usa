@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Event Submit API Route
  * POST: Create new event submission

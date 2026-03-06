@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Admin User Action History API Route (Week 14)
  * GET: Retrieve action history for a specific user

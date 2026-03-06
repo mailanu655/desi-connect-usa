@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Newsletter Subscription Lookup API Route
  * GET: Look up a subscription by email address

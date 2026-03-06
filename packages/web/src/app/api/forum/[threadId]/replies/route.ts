@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Thread Replies API Route
  * GET: List replies for a thread (paginated)

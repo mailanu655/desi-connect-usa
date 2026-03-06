@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Event RSVP API Route
  * GET: Check if current user has RSVP'd to event

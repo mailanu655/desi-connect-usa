@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Admin Moderation History API Route (Week 14)
  * GET: Retrieve moderation history for a specific content item

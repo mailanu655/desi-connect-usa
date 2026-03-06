@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Verify magic link endpoint
  * Verifies the magic link token and creates a session

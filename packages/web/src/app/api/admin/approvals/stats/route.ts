@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Admin Approval Workflow Stats API Route (Week 14)
  * GET: Retrieve approval workflow statistics

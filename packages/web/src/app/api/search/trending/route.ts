@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * GET /api/search/trending - Trending search terms
  * Week 13: Search & Discovery

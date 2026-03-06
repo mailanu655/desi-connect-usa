@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Admin User Management Action API Route (Week 14)
  * POST: Perform a management action on a user

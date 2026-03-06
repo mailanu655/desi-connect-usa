@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Admin Moderation Stats API Route (Week 14)
  * GET: Retrieve moderation statistics

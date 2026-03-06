@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Send phone OTP endpoint
  * Sends OTP code to the provided phone number

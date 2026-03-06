@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Verify phone OTP endpoint
  * Verifies OTP code and creates a session

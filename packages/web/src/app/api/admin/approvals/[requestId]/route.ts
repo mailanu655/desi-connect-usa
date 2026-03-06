@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Admin Approval Detail API Route (Week 14)
  * GET: Get a single approval request by ID

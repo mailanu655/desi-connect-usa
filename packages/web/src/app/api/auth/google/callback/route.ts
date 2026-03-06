@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Google OAuth callback endpoint
  * Exchanges OAuth code for tokens and creates a session

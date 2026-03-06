@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Forum Categories API Route
  * GET: List all categories (returns getDefaultCategories from '@/lib/forum')

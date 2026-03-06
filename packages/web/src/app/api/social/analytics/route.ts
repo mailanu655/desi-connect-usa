@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Social Media Analytics API Route
  * GET: Retrieve analytics data with optional period/platform filtering

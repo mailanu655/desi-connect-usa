@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * User Submissions API Route
  * GET: Retrieve user submissions with filters

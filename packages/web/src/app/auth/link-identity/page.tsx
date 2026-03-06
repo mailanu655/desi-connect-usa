@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Identity linking page
  * Allows logged-in users to link their WhatsApp number to their account

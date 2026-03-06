@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Admin Approval Decision API Route (Week 14)
  * POST: Submit an approval decision

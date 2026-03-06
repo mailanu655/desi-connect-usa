@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Forum Threads API Route
  * GET: List threads with filters (category, status, city, tags, sort, page, limit)

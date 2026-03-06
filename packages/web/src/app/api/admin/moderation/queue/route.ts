@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Admin Moderation Queue API Route (Week 14)
  * GET: List moderation queue items with filters

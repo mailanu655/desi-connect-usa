@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Edit Profile Page
  * Form for updating user profile information

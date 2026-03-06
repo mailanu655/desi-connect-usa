@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Newsletter Subscribe API Route
  * POST: Subscribe a new email to the newsletter

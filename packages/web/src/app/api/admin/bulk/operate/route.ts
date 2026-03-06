@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Admin Bulk Operations API Route (Week 14)
  * POST: Perform bulk operations on multiple content items

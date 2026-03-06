@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Admin Approvals Queue API Route (Week 14)
  * GET: List approval requests with filters

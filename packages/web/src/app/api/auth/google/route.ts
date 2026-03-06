@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Google OAuth redirect endpoint
  * Redirects to Google's OAuth consent screen

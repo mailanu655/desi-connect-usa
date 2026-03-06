@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Admin Dashboard Stats API Route (Week 14)
  * GET: Retrieve overall dashboard statistics

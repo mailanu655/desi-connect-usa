@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Admin Content Management API Route (Week 14)
  * GET: List content with management filters

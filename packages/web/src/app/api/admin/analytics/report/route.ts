@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 /**
  * Admin Analytics Report API Route (Week 14)
  * GET: Generate analytics report for a given time range and metric
