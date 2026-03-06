@@ -92,10 +92,23 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 }
 
+// Default value returned when useAuth is called outside AuthProvider
+// (e.g. during Next.js static page generation / SSR)
+const defaultAuthValue: AuthContextValue = {
+  user: null,
+  session: null,
+  isLoading: true,
+  isAuthenticated: false,
+  login: () => {},
+  logout: async () => {},
+  refreshUser: async () => {},
+};
+
 export function useAuth(): AuthContextValue {
   const context = useContext(AuthContext);
   if (context === undefined) {
-    throw new Error('useAuth must be used within an AuthProvider');
+    // Return safe defaults instead of throwing during SSR / static generation
+    return defaultAuthValue;
   }
   return context;
 }
