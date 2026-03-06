@@ -1,4 +1,5 @@
 'use client';
+export const dynamic = 'force-dynamic';
 
 import { useState, useEffect } from 'react';
 import { DEFAULT_PAGE_SIZE } from '@/lib/constants';

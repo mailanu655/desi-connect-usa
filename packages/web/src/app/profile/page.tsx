@@ -1,10 +1,10 @@
-export const dynamic = 'force-dynamic';
 /**
  * User Profile Dashboard
  * Displays user info with tabs for submissions, saved items, and notifications
  */
 
 'use client';
+export const dynamic = 'force-dynamic';
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';

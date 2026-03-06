@@ -1,4 +1,3 @@
-export const dynamic = 'force-dynamic';
 /**
  * Login page with three authentication methods:
  * - Google Sign In (primary)
@@ -7,6 +6,7 @@ export const dynamic = 'force-dynamic';
  */
 
 'use client';
+export const dynamic = 'force-dynamic';
 
 import React, { useState } from 'react';
 import { useAuth } from '@/context/AuthContext';

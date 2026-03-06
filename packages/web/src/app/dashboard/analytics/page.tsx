@@ -1,4 +1,5 @@
 'use client';
+export const dynamic = 'force-dynamic';
 
 import { useState, useEffect } from 'react';
 import { calculateGrowthMetrics, formatMetricValue } from '@/lib/user-profile';

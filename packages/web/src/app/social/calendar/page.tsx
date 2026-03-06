@@ -1,4 +1,5 @@
 'use client';
+export const dynamic = 'force-dynamic';
 
 import { useState, useEffect, useMemo } from 'react';
 import type { SocialMediaPost, ContentCategory, ContentStatus, SocialPlatform } from '@desi-connect/shared';

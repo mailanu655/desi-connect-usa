@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import Link from 'next/link';
 import { apiClient } from '@/lib/api-client';
 import { SITE_NAME } from '@/lib/constants';

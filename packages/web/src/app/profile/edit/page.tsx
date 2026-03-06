@@ -1,10 +1,10 @@
-export const dynamic = 'force-dynamic';
 /**
  * Edit Profile Page
  * Form for updating user profile information
  */
 
 'use client';
+export const dynamic = 'force-dynamic';
 
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
